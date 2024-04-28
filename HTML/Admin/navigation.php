@@ -7,7 +7,7 @@
         <a href="dashboard.php" class="<?php if ($page == 'Dashboard') echo 'active'; ?>">
             <i class="fa-solid fa-gauge"></i>DASHBOARD</a>
 
-        <a href="#" class="<?php if ($page == 'Transactions') echo 'active'; ?>">
+        <a href="Transaction/transactions.php" class="<?php if ($page == 'Transactions') echo 'active'; ?>">
             <i class="fa-solid fa-book-bookmark"></i>TRANSACTIONS</a>
 
         <a href="accounts.php" class="<?php if ($page == 'Accounts') echo 'active'; ?>">

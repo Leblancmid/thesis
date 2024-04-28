@@ -294,3 +294,12 @@ table tbody tr:hover {
 .add-button:focus {
     outline: none;
 }
+
+.transaction_date {
+    width: 280px;
+}
+
+.search-icon {
+    height: 38px;
+    border-radius: 0;
+}
