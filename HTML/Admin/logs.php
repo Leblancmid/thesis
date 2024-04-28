@@ -7,8 +7,8 @@ include('navigation.php');
 <div class="container-1">
     <div class="container-heading mt-3">
         <div class="details lh-1 mb-2">
-            <p class="mb-1">WELCOME BACK</p>
-            <p>Admin</p>
+            <p class="mb-1"></p>
+            <p>LOGS</p>
         </div>
         <img src="../../IMAGES/Icon-2/picpic.jpg">
     </div>

@@ -13,7 +13,7 @@
         <a href="accounts.php" class="<?php if ($page == 'Accounts') echo 'active'; ?>">
             <i class="fa-solid fa-clipboard-user"></i>ACCOUNTS</a>
 
-        <a href="#" class="<?php if ($page == 'Offers') echo 'active'; ?>">
+        <a href="offers.php" class="<?php if ($page == 'Offers') echo 'active'; ?>">
             <i class="fa-brands fa-buffer"></i>OFFFERS</a>
 
         <a href="#" class="<?php if ($page == 'Rooms') echo 'active'; ?>">
