@@ -1,7 +1,7 @@
 <?php
 $page = 'Transactions';
-include 'navigation.php';
-include 'header.php';
+include('navigation.php');
+include 'header.php'
 ?>
 
 <div class="container-1">
@@ -17,33 +17,16 @@ include 'header.php';
         <div class="transactions">
             <ul class="nav nav-tabs fw-bold">
                 <li class="nav-item">
-                    <a class="nav-link text-dark active" aria-current="page" href="transactions.php">Booking</a>
+                    <a class="nav-link text-dark" href="transactions.php">Booking</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="rebooking.php">Re-booking</a>
+                    <a class="nav-link text-dark active" aria-current="page" href="rebooking.php">Re-booking</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="payment.php">Payment</a>
                 </li>
             </ul>
 
-            <div class="bg-dark d-flex p-3 mt-3 justify-content-between">
-                <div class="text-white d-flex gap-2  align-items-baseline">
-                    <label for="">From:</label>
-                    <input type="date" class="form-control transaction_date">
-                </div>
-                <div class="text-white d-flex gap-2  align-items-baseline">
-                    <label for="">From:</label>
-                    <input type="date" class="form-control transaction_date">
-                </div>
-                <div class="text-white d-flex gap-2  align-items-baseline transaction_date">
-                    <label for="">Status: </label>
-                    <select name="" class="form-select">
-                        <option value="">Booked</option>
-                        <option value="">Pending</option>
-                    </select>
-                </div>
-            </div>
             <div class="d-flex gap-5 my-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
@@ -51,7 +34,6 @@ include 'header.php';
                     </div>
                     <input type="text" class="form-control">
                 </div>
-                <a href="add_transaction.php" class="btn btn-success w-25">ADD</a>
             </div>
 
             <table>
@@ -63,7 +45,7 @@ include 'header.php';
                         <th>NAME</th>
                         <th>CHECK-IN</th>
                         <th>CHECK-OUT</th>
-                        <th>STATUS</th>
+                        <th>MODIFY</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -74,7 +56,7 @@ include 'header.php';
                         <td>Michael Nabong</td>
                         <td>11/02/2023</td>
                         <td>11/05/2023</td>
-                        <td>Booked</td>
+                        <td><button><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>
                         <td>103252233</td>
@@ -83,7 +65,7 @@ include 'header.php';
                         <td>Ayevin Junior Hao</td>
                         <td>01/02/2024</td>
                         <td>01/05/2024</td>
-                        <td>Pending</td>
+                        <td><button><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>
                         <td>103053180</td>

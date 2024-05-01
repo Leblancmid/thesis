@@ -1,129 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+$page = 'Offers';
+include 'header.php';
+include('navigation.php');
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../../CSS/index.css">
-    <script src="https://kit.fontawesome.com/d8f0503c9b.js" crossorigin="anonymous"></script>
-
-</head>
-
-<body>
-    <div class="header">
-        <a href="#"><img src="../../../IMAGES/Icon-2/Asset 10@4x.png"></a>
-        <div class="header-navigation">
-            <div class="nav">
-                <div class="sub-nav">
-                    <a href="#">Gallery</a>
-                    <a href="#">Reviews</a>
-                    <a href="#">Contacts</a>
-                    <a href="#">Location</a>
-                </div>
-                <div class="main-nav">
-                    <a href="#">Home</a>
-                    <a href="#">Accomodations</a>
-                    <a href="#">Facilities</a>
-                    <a href="#">About Us</a>
-                </div>
-            </div>
-            <a href="../sign.php" class="sign-in">
-                <span>want to check reservation?</span>
-                <p>SIGN IN</p>
-            </a>
+<div class="container-1">
+    <div class="container-heading mt-3">
+        <div class="details lh-1 mb-2">
+            <p class="mb-1"></p>
+            <p>OFFERS</p>
         </div>
+        <img src="../../IMAGES/Icon-2/picpic.jpg">
     </div>
-
-    <div class="heading-container">
-        <p>Accomodations</p>
-    </div>
-
-    <div class="process">
-        <a href="#" class="selected">Room Selection</a>
-        <a href="#" class="selected">Check In-Out Selection</a>
-        <a href="#">Client Details</a>
-        <a href="#">Booking Details</a>
-        <a href="#">Receipt</a>
-    </div>
-
-    <div class="container">
-        <div class="calendar" id="currentMonthCalendar">
-            <!-- Calendar content will be rendered here -->
-            <div class="calendar">
-                <div class="header-calendar">
-                    <div class="month">July 2024</div>
-                    <div class="btns">
-                        <!-- today -->
-                        <div class="btn-calendar today">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-calendar2-minus" viewBox="0 0 16 16">
-                                <path d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5" />
-                                <path
-                                    d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
-                                <path
-                                    d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
-                            </svg>
-                        </div>
-                        <!-- previous month -->
-                        <div class="btn-calendar prev">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-left" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-                            </svg>
+    <div>
+        <div class="container">
+            <div class="calendar" id="currentMonthCalendar">
+                <!-- Calendar content will be rendered here -->
+                <div class="calendar">
+                    <div class="header">
+                        <div class="month">July 2024</div>
+                        <div class="btns">
+                            <!-- today -->
+                            <div class="btn today">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar2-minus" viewBox="0 0 16 16">
+                                    <path d="M5.5 10.5A.5.5 0 0 1 6 10h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5" />
+                                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z" />
+                                    <path d="M2.5 4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H3a.5.5 0 0 1-.5-.5z" />
+                                </svg>
+                            </div>
+                            <!-- previous month -->
+                            <div class="btn prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                                </svg>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="weekdays">
-                    <div class="day">Sun</div>
-                    <div class="day">Mon</div>
-                    <div class="day">Tue</div>
-                    <div class="day">Wed</div>
-                    <div class="day">Thu</div>
-                    <div class="day">Fri</div>
-                    <div class="day">Sat</div>
-                </div>
-                <div class="days">
-                </div>
-            </div>
-        </div>
-
-        <!-- Right Calendar: Next Month -->
-        <div class="calendar" id="nextMonthCalendar">
-            <!-- Calendar content will be rendered here -->
-            <div class="calendar">
-                <div class="header-calendar">
-                    <div class="month">August 2024</div>
-                    <div class="btns">
-                        <!-- next month -->
-                        <div class="btn-calendar next">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-right" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-                            </svg>
-                        </div>
+                    <div class="weekdays">
+                        <div class="day">Sun</div>
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                    </div>
+                    <div class="days">
                     </div>
                 </div>
-                <div class="weekdays">
-                    <div class="day">Sun</div>
-                    <div class="day">Mon</div>
-                    <div class="day">Tue</div>
-                    <div class="day">Wed</div>
-                    <div class="day">Thu</div>
-                    <div class="day">Fri</div>
-                    <div class="day">Sat</div>
-                </div>
-                <div class="days">
+            </div>
+
+            <!-- Right Calendar: Next Month -->
+            <div class="calendar" id="nextMonthCalendar">
+                <!-- Calendar content will be rendered here -->
+                <div class="calendar">
+                    <div class="header">
+                        <div class="month">August 2024</div>
+                        <div class="btns">
+                            <!-- next month -->
+                            <div class="btn next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <div class="day">Sun</div>
+                        <div class="day">Mon</div>
+                        <div class="day">Tue</div>
+                        <div class="day">Wed</div>
+                        <div class="day">Thu</div>
+                        <div class="day">Fri</div>
+                        <div class="day">Sat</div>
+                    </div>
+                    <div class="days">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container-buttons">
-        <a href="#">CANCEL</a>
-        <a href="#">SUBMIT</a>
     </div>
 
     <script>
@@ -150,7 +105,7 @@
 
             while (currentMonth > 11) {
                 currentMonth -= 12;
-                currentYear++;  
+                currentYear++;
             }
             while (currentMonth < 0) {
                 currentMonth += 12;
@@ -226,8 +181,7 @@
                         day.style.fontSize = "9px";
                         day.style.whiteSpace = "pre-line";
                         day.style.textAlign = "center";
-                    } else {
-                    }
+                    } else {}
                 });
             };
             updateCheckInOutText()
@@ -291,6 +245,4 @@
         renderCalendar(currentMonthContainer, 0);
         renderCalendar(nextMonthContainer, 1);
     </script>
-</body>
-
-</html>
+    <?php include 'footer.php'; ?>

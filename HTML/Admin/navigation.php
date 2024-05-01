@@ -7,7 +7,7 @@
         <a href="dashboard.php" class="<?php if ($page == 'Dashboard') echo 'active'; ?>">
             <i class="fa-solid fa-gauge"></i>DASHBOARD</a>
 
-        <a href="Transaction/transactions.php" class="<?php if ($page == 'Transactions') echo 'active'; ?>">
+        <a href="transactions.php" class="<?php if ($page == 'Transactions') echo 'active'; ?>">
             <i class="fa-solid fa-book-bookmark"></i>TRANSACTIONS</a>
 
         <a href="accounts.php" class="<?php if ($page == 'Accounts') echo 'active'; ?>">
@@ -16,13 +16,13 @@
         <a href="offers.php" class="<?php if ($page == 'Offers') echo 'active'; ?>">
             <i class="fa-brands fa-buffer"></i>OFFFERS</a>
 
-        <a href="#" class="<?php if ($page == 'Rooms') echo 'active'; ?>">
+        <a href="rooms.php" class="<?php if ($page == 'Rooms') echo 'active'; ?>">
             <i class="fa-solid fa-door-closed"></i>ROOMS</a>
 
-        <a href="message.php" class="<?php if ($page == 'Messages') echo 'active'; ?>">
+        <a href="messages.php" class="<?php if ($page == 'Messages') echo 'active'; ?>">
             <i class="fa-solid fa-inbox"></i>MESSAGES</a>
 
-        <a href="#" class="<?php if ($page == 'Reports') echo 'active'; ?>">
+        <a href="reports.php" class="<?php if ($page == 'Reports') echo 'active'; ?>">
             <i class="fa-solid fa-square-poll-vertical"></i>REPORTS</a>
 
         <a href="logs.php" class="<?php if ($page == 'Logs') echo 'active'; ?>">

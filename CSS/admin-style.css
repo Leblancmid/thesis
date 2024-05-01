@@ -303,3 +303,230 @@ table tbody tr:hover {
     height: 38px;
     border-radius: 0;
 }
+
+.rooms_container {
+    width: 500px;
+    height: 1000px;
+}
+
+.room_box {
+    height: 120px;
+    width: 150px;
+}
+
+.room_box_rooms {
+    height: 120px;
+    width: 1600px;
+}
+
+.room_price {
+    font-weight: 700;
+}
+
+.bg-color-gray-custom {
+    background-color: #d9d9d9;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+}
+
+.calendar {
+    width: 100%;
+    max-width: 600px;
+    height: 600px;
+    /* Added fixed height for consistency */
+    background: var(--bg-color);
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: relative;
+    /* Added position relative for popup */
+}
+
+.calendar .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.calendar .header .month {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.calendar .header .btns {
+    display: flex;
+    gap: 10px;
+}
+
+.calendar .header .btns .btn {
+    width: 50px;
+    height: 40px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #483dec;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.calendar .header .btns .btn:hover {
+    background: #8fe5f5;
+    transform: scale(1.05);
+}
+
+.calendar .weekdays {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.calendar .weekdays .day {
+    width: calc(100% / 7 - 10px);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.calendar .days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.calendar .days .day {
+    width: calc(100% / 7 - 10px);
+    height: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    transition: all 0.3s;
+    user-select: none;
+    position: relative;
+    /* Added position relative for popup */
+}
+
+.calendar .days .day:not(.next):not(.prev):hover {
+    color: #149cdbf6;
+    transform: scale(1.05);
+}
+
+.calendar .days .day.next,
+.calendar .days .day.prev {
+    color: #ccc;
+}
+
+.calendar .days .day.today {
+    color: #fff;
+    background: #192f5f;
+}
+
+.calendar .days .day.selected-start,
+.calendar .days .day.selected-end,
+.calendar .days .day.in-range {
+    background: #3659a5;
+    /* Red background for selected start and end dates */
+}
+
+.calendar .days .day.selected-start {
+    background: #192f5f;
+    color: #fff;
+}
+
+.calendar .days .day.selected-end {
+    background: #192f5f;
+    color: #fff;
+    /* Green color for end date */
+}
+
+.calendar .days .day.in-range {
+    color: #fff;
+    /* Light red color for dates in between */
+}
+
+.calendar .popup {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+.calendar .popup.active {
+    display: block;
+}
+
+.credits a {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #aaa;
+}
+
+.credits span {
+    color: var(--primary-color);
+}
+
+.formGroup1 label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    display: block;
+    width: 135%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control-info {
+    display: block;
+    width: 30%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--bs-body-color);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--bs-body-bg);
+    background-clip: padding-box;
+    border: var(--bs-border-width) solid var(--bs-border-color);
+    border-radius: var(--bs-border-radius);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

@@ -48,20 +48,23 @@ include('navigation.php');
         </div>
     </div>
     <div class="sales-container">
+        <button onclick="toggleAmounts()">
+            <i class="fas fa-eye"></i>
+        </button>
         <div class="heading-1">Earnings</div>
         <div class="sales">
             <div class="amount">
                 <div class="total-amount">
                     <p class="sub-heading-1 mb-0">Today</p>
-                    <p class="sub-heading-2">₱ 5000</p>
+                    <p class="sub-heading-2" id="todayAmount">₱ *****</p>
                 </div>
                 <div class="total-amount">
                     <p class="sub-heading-1 mb-0">Month</p>
-                    <p class="sub-heading-2">₱ 50000</p>
+                    <p class="sub-heading-2" id="monthAmount">₱ *****</p>
                 </div>
                 <div class="total-amount">
                     <p class="sub-heading-1 mb-0">Year</p>
-                    <p class="sub-heading-2">₱ 100000</p>
+                    <p class="sub-heading-2" id="yearAmount">₱ *****</p>
                 </div>
             </div>
             <div class="graph">
@@ -99,6 +102,22 @@ include('navigation.php');
         chart.render();
         var endTime = new Date();
 
+    }
+
+    function toggleAmounts() {
+        var todayAmount = document.getElementById('todayAmount');
+        var monthAmount = document.getElementById('monthAmount');
+        var yearAmount = document.getElementById('yearAmount');
+
+        if (todayAmount.textContent === '₱ *****') {
+            todayAmount.textContent = '₱ 5000';
+            monthAmount.textContent = '₱ 50000';
+            yearAmount.textContent = '₱ 100000';
+        } else {
+            todayAmount.textContent = '₱ *****';
+            monthAmount.textContent = '₱ *****';
+            yearAmount.textContent = '₱ *****';
+        }
     }
 </script>
 <?php include 'footer.php'; ?>
