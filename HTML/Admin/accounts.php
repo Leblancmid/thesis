@@ -1,7 +1,7 @@
 <?php
 $page = 'Accounts';
-include('navigation.php');
-include 'header.php'
+include 'navigation.php';
+include 'header.php';
 ?>
 
 <div class="container-1">
@@ -42,7 +42,7 @@ include 'header.php'
                 </div>
             </div>
             <div class="text-end me-3">
-                <button class="btn btn-primary w-25">Save</button>
+                <a href="manage_account.php" class="btn btn-primary w-25">ADD</a>
                 <button class="btn btn-secondary w-25">Cancel</button>
             </div>
         </div>

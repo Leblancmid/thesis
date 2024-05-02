@@ -17,10 +17,10 @@ include('navigation.php');
         <div class="transactions">
             <ul class="nav nav-tabs fw-bold">
                 <li class="nav-item">
-                    <a class="nav-link text-dark active" aria-current="page" href="#">Rooms</a>
+                    <a class="nav-link text-dark " aria-current="page" href="offers.php">Rooms</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="amenities.php">Amenities</a>
+                    <a class="nav-link text-dark active" href="#">Amenities</a>
                 </li>
             </ul>
     </div>
@@ -31,7 +31,7 @@ include('navigation.php');
                     </div>
                     <input type="text" class="form-control">
                 </div>
-                <a href="add_room.php" class="btn btn-success w-25">ADD</a>
+                <a href="add_amenities.php" class="btn btn-success w-25">ADD</a>
             </div>
         <table>
             <thead>
@@ -39,7 +39,7 @@ include('navigation.php');
                     <th>ROOM ID</th>
                     <th>ROOM PAX</th>
                     <th>PRICE</th>
-                    <th colspan="2" >MODIFY</th>
+                    <th>MODIFY</th>
                 </tr>
             </thead>
             <tbody>

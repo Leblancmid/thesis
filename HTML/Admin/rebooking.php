@@ -74,7 +74,7 @@ include 'header.php'
                         <td>Precious Yanga</td>
                         <td>02/08/2024</td>
                         <td>02/12/2024</td>
-                        <td>Booked</td>
+                        <td><button><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>
                         <td>470921473</td>
@@ -83,7 +83,7 @@ include 'header.php'
                         <td>Shayne Danos</td>
                         <td>03/15/2024</td>
                         <td>03/20/2024</td>
-                        <td>Booked</td>
+                        <td><button><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                     <tr>
                         <td>359096799</td>
@@ -92,7 +92,7 @@ include 'header.php'
                         <td>Jeff Calamay</td>
                         <td>04/01/2024</td>
                         <td>04/05/2024</td>
-                        <td>Pending</td>
+                        <td><button><i class="fas fa-trash-alt"></i></button></td>
                     </tr>
                 </tbody>
             </table>

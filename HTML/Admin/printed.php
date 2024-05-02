@@ -17,57 +17,34 @@ include('navigation.php');
         <h1>Guest Information</h1>
         <table border="1">
             <tr>
-                <th>First Name:</th>
-                <td>Michael</td>
-            </tr>
-            <tr>
-                <th>Last Name:</th>
-                <td>Nabong</td>
-            </tr>
-            <tr>
-                <th>Gender:</th>
-                <td>Male</td>
-            </tr>
-            <tr>
-                <th>Contact:</th>
-                <td>09677160231</td>
-            </tr>
-            <tr>
-                <th>Address:</th>
-                <td>150 Gordon St. Valenzuela</td>
-            </tr>
-            <tr>
-                <th>Email:</th>
-                <td>nabongmichaeladriane@gmail.com</td>
-            </tr>
-            <tr>
                 <th>Checked-in Date:</th>
-                <td>May 15, 2024</td>
+                <td><?php echo $_GET['startDate'] ?? ''; ?></td>
             </tr>
             <tr>
                 <th>Checked-out Date:</th>
-                <td>May 18, 2024</td>
+                <td><?php echo $_GET['endDate'] ?? ''; ?></td>
             </tr>
             <tr>
-                <th>Additional Pax:</th>
-                <td>2</td>
+                <th>First Name:</th>
+                <td><?php echo $_GET['firstName'] ?? ''; ?></td>
             </tr>
             <tr>
-                <th>Senior Citizens/PWDs:</th>
-                <td>2</td>
+                <th>Gender:</th>
+                <td><?php echo $_GET['gender'] ?? ''; ?></td>
             </tr>
             <tr>
-                <th>Available Amenities:</th>
-                <td>Videoke</td>
+                <th>Contract:</th>
+                <td><?php echo $_GET['contact'] ?? ''; ?></td>
             </tr>
             <tr>
-                <th>Status:</th>
-                <td>Booked</td>
+                <th>Address:</th>
+                <td><?php echo $_GET['address'] ?? ''; ?></td>
             </tr>
             <tr>
-                <th>Total Amount:</th>
-                <td>₱5,450</td>
+                <th>Email:</th>
+                <td><?php echo $_GET['email'] ?? ''; ?></td>
             </tr>
+            <!-- Include other fields similarly -->
         </table>
         <a class="btn btn-secondary" href="information.php">Back</a>
     </body>

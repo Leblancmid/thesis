@@ -1,7 +1,7 @@
 <?php
 $page = 'Transactions';
-include('navigation.php');
-include 'header.php'
+include 'navigation.php';
+include 'header.php';
 ?>
 <div class="container-1">
     <div class="container-heading mt-3">
@@ -78,9 +78,16 @@ include 'header.php'
                     </div>
                 </div>
             </div>
+
         </div>
-        <a class="btn btn-primary" href="information.php">Next</a>
-        <a class="btn btn-secondary" href="add_transaction.php">Back</a>
+        <form action="information.php" method="POST" id="bookingForm">
+            <input type="hidden" name="price" value="<?php echo $_GET['price'] ?? ''; ?>">
+            <input type="hidden" name="startDate" id="startDate" value=" ">
+            <input type="hidden" name="endDate" id="endDate" value=" ">
+
+            <button type="button" onclick="validateForm()" class="btn btn-primary">Next</button>
+            <a class="btn btn-secondary" href="add_transaction.php">Back</a>
+        </form>
     </div>
 </div>
 
@@ -199,7 +206,7 @@ include 'header.php'
                     if (clickedDate >= selectedStartDate) {
                         selectedEndDate = clickedDate;
                     } else {
-                        alert('Selected Date must be higher');
+                        alert('Selected date must be higher');
                         return;
                         selectedEndDate = selectedStartDate;
                         selectedStartDate = clickedDate;
@@ -210,11 +217,24 @@ include 'header.php'
                     selectedEndDate = null;
                 }
 
+                document.getElementById("startDate").value = shortenDate(selectedStartDate);
+                document.getElementById("endDate").value = shortenDate(selectedEndDate);
+
                 renderCalendar(currentMonthContainer, 0);
                 renderCalendar(nextMonthContainer, 1);
             });
         });
     };
+
+    function shortenDate(longDate) {
+        var dateObj = new Date(longDate);
+        var month = (dateObj.getMonth() + 1).toString().padStart(2, '0'); // Add 1 to month since it's zero-based
+        var day = dateObj.getDate().toString().padStart(2, '0');
+        var year = dateObj.getFullYear();
+
+        return `${month}-${day}-${year}`;
+    }
+
 
     const currentBtn = document.querySelector(".today");
 
@@ -248,11 +268,15 @@ include 'header.php'
     renderCalendar(currentMonthContainer, 0);
     renderCalendar(nextMonthContainer, 1);
 
-    document.getElementById("additionalPax").addEventListener("input", function() {
-        if (this.value < 0) {
-            this.value = 0;
+    function validateForm() {
+        if (!selectedEndDate) {
+            alert('You must select a check-out date');
+            return;
         }
-    });
+
+        // If validation passes, submit the form
+        document.getElementById('bookingForm').submit();
+    }
 </script>
 
 <?php include 'footer.php' ?>

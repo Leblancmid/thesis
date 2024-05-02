@@ -247,21 +247,20 @@ table {
 table th,
 table td {
     padding: 12px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+    text-align: center;
+    border-left: 1px solid #0a0a0a;
+    border-right: 1px solid #0a0a0a;
+    background-color: #d1cdcd;
 }
 
+/* Standard CSS for table styling */
 table th {
-    background-color: #f2f2f2;
+    background-color: #050505;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
 }
 
-table tbody tr:hover {
-    background-color: #f5f5f5;
-}
-
-/* CSS for responsive design */
+/* Media query for responsive design */
 @media screen and (max-width: 600px) {
     table {
         overflow-x: auto;
@@ -273,6 +272,7 @@ table tbody tr:hover {
         white-space: nowrap;
     }
 }
+
 
 .add-button {
     padding: 10px 20px;
@@ -310,13 +310,7 @@ table tbody tr:hover {
 }
 
 .room_box {
-    height: 120px;
-    width: 150px;
-}
-
-.room_box_rooms {
-    height: 120px;
-    width: 1600px;
+    background-color: #d9d9d9;
 }
 
 .room_price {
@@ -529,4 +523,11 @@ table tbody tr:hover {
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius);
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.promo-icon {
+    width: auto;
+    height: 50px;
+    border-radius: 0 !important;
+    border: none !important;
 }
